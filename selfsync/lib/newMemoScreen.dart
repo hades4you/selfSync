@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selfsync/memoDatabase.dart'; // Import your memo database controller
+import 'package:selfsync/memoDatabase.dart';
 
 class NewMemoScreen extends StatelessWidget {
   final TextEditingController _titleController = TextEditingController();

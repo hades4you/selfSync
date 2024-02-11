@@ -6,7 +6,6 @@ class NewScheduleButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        // Navigate to the new schedule screen
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => NewScheduleScreen()),

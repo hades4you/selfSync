@@ -5,7 +5,7 @@ import 'package:selfsync/newScheduleButton.dart';
 import 'package:selfsync/passwordPage.dart';
 import 'package:selfsync/scheduleDatabase.dart';
 import 'package:selfsync/passwordPageButton.dart';
-import 'package:selfsync/memoDatabase.dart'; // Import your memo database controller
+import 'package:selfsync/memoDatabase.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,10 +28,8 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text('selfSync'),
         ),
-        resizeToAvoidBottomInset:
-            true, // Ensure that the page resizes to avoid the bottom inset (i.e., keyboard)
+        resizeToAvoidBottomInset: true,
         body: SingleChildScrollView(
-          // Wrap your column with a SingleChildScrollView
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -77,7 +75,6 @@ class _MyAppState extends State<MyApp> {
                           ),
                         );
                       } else {
-                        // Sort events by dateTime
                         events.sort((a, b) => DateTime.parse(a.dateTime)
                             .compareTo(DateTime.parse(b.dateTime)));
 
@@ -104,7 +101,6 @@ class _MyAppState extends State<MyApp> {
                                       _deleteEvent(event.id!);
                                     },
                                   ),
-                                  // Add more details here as needed
                                 ))
                             .toList();
                         return Scrollbar(
@@ -118,9 +114,7 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
-              SizedBox(
-                  height:
-                      10), // Add some space between schedule and memo sections
+              SizedBox(height: 10),
               Container(
                 height: height * 0.35,
                 color: Colors.grey[200],

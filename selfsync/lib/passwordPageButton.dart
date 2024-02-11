@@ -9,8 +9,8 @@ class PasswordPageButton extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(10),
       child: SizedBox(
-        width: double.infinity, // Adjust width as needed
-        height: 50, // Adjust height as needed
+        width: double.infinity,
+        height: 50,
         child: ElevatedButton(
           onPressed: () {
             Navigator.push(

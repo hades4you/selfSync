@@ -78,7 +78,6 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                 passwordController.clear();
                 urlController.clear();
 
-                // Navigate back to the previous screen (optional)
                 Navigator.pop(context);
               },
               child: Text('Save'),

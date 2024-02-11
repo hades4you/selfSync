@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:selfsync/newPasswordScreen.dart';
-import 'package:selfsync/passwordPage.dart';
 
 class NewPasswordButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        // Navigate to the new password screen
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => NewPasswordScreen()),

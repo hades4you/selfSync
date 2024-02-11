@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selfsync/passwordDatabase.dart'; // Import your database controller
+import 'package:selfsync/passwordDatabase.dart';
 
 class PasswordPage extends StatefulWidget {
   @override
@@ -78,7 +78,6 @@ class _PasswordPageState extends State<PasswordPage> {
                       },
                     );
                   },
-                  // You can add more details or actions here
                 );
               },
             );

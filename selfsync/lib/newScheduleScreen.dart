@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:selfsync/scheduleDatabase.dart'; // Import the DatabaseHelper class
+import 'package:selfsync/scheduleDatabase.dart';
 
 class NewScheduleScreen extends StatefulWidget {
   @override
